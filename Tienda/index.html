@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ANDEN — Mochila Trayecto</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <div class="wrap header-inner">
+    <div class="wordmark">ANDEN</div>
+    <nav>
+      <a href="#detalle">Detalle</a>
+      <a href="#reseñas">Reseñas</a>
+      <a href="#relacionados">Más productos</a>
+    </nav>
+    <div class="cart-icon">Carro (0)</div>
+  </div>
+</header>
+
+<section class="producto">
+  <div class="wrap producto-grid">
+
+    <div class="galeria">
+      <div class="galeria-principal">
+        <img id="imagen-principal" src="https://picsum.photos/id/1005/900/900" alt="Mochila Trayecto vista frontal">
+      </div>
+      <div class="galeria-thumbs">
+        <img class="thumb active" src="https://picsum.photos/id/1005/160/160" data-full="https://picsum.photos/id/1005/900/900" alt="Vista frontal">
+        <img class="thumb" src="https://picsum.photos/id/1011/160/160" data-full="https://picsum.photos/id/1011/900/900" alt="Vista lateral">
+        <img class="thumb" src="https://picsum.photos/id/1015/160/160" data-full="https://picsum.photos/id/1015/900/900" alt="Compartimento interior">
+        <img class="thumb" src="https://picsum.photos/id/1025/160/160" data-full="https://picsum.photos/id/1025/900/900" alt="Detalle de costura">
+      </div>
+    </div>
+
+    <div class="info">
+      <p class="categoria">Mochilas técnicas</p>
+      <h1>Trayecto</h1>
+      <div class="rating">★★★★★ <span>(128 reseñas)</span></div>
+      <p class="precio">$54.990</p>
+      <p class="descripcion-corta">Mochila de 22L con compartimento acolchado para laptop de hasta 15", tela resistente al agua y espalda ventilada. Pensada para el día a día en la ciudad.</p>
+
+      <div class="selector-bloque">
+        <p class="selector-label">Color: <span id="color-seleccionado">Grafito</span></p>
+        <div class="swatches">
+          <button class="swatch active" style="background:#3A3A38" data-color="Grafito"></button>
+          <button class="swatch" style="background:#5C6B63" data-color="Verde musgo"></button>
+          <button class="swatch" style="background:#8C7A5C" data-color="Arena"></button>
+          <button class="swatch" style="background:#26201A" data-color="Negro"></button>
+        </div>
+      </div>
+
+      <div class="selector-bloque">
+        <p class="selector-label">Cantidad</p>
+        <div class="stepper">
+          <button id="menos" class="stepper-btn">−</button>
+          <span id="cantidad">1</span>
+          <button id="mas" class="stepper-btn">+</button>
+        </div>
+      </div>
+
+      <button id="agregar-carro" class="btn-comprar">Agregar al carro — $54.990</button>
+      <p class="envio-nota">Envío gratis en compras sobre $40.000 · Cambios sin costo dentro de 30 días</p>
+
+      <div class="accordion">
+        <div class="accordion-item">
+          <button class="accordion-head">Materiales y detalles</button>
+          <div class="accordion-body">
+            <p>Exterior en poliéster 900D resistente a la abrasión, forro interior reciclado, cierres YKK y base reforzada. Peso: 780 gramos.</p>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <button class="accordion-head">Envío y devoluciones</button>
+          <div class="accordion-body">
+            <p>Despacho a todo Chile en 2 a 5 días hábiles. Si no queda conforme, tiene 30 días para cambiarla sin costo, en su empaque original.</p>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <button class="accordion-head">Garantía</button>
+          <div class="accordion-body">
+            <p>2 años de garantía por defectos de fabricación, incluyendo cierres y costuras.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section id="detalle" class="caracteristicas">
+  <div class="wrap caracteristicas-grid">
+    <div class="caracteristica">
+      <p class="carac-num">01</p>
+      <h3>Compartimento acolchado</h3>
+      <p>Laptop de hasta 15" protegida en un bolsillo independiente, separado del resto de la carga.</p>
+    </div>
+    <div class="caracteristica">
+      <p class="carac-num">02</p>
+      <h3>Resistente al agua</h3>
+      <p>Tela tratada que repele lluvia ligera, con costuras selladas en las zonas críticas.</p>
+    </div>
+    <div class="caracteristica">
+      <p class="carac-num">03</p>
+      <h3>Espalda ventilada</h3>
+      <p>Panel con canales de aire para que no se sienta pegada en trayectos largos.</p>
+    </div>
+  </div>
+</section>
+
+<section id="reseñas" class="reseñas">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>Lo que dicen quienes ya la usan</h2>
+      <div class="rating-resumen">★★★★★ <strong>4.8</strong> de 5 — 128 reseñas</div>
+    </div>
+    <div class="reseñas-grid">
+      <div class="reseña-card">
+        <div class="reseña-estrellas">★★★★★</div>
+        <p>La uso todos los días para ir a la u, el compartimento de laptop es súper cómodo.</p>
+        <p class="reseña-autor">Francisca T.</p>
+      </div>
+      <div class="reseña-card">
+        <div class="reseña-estrellas">★★★★★</div>
+        <p>Le llovió fuerte una vez que la dejé afuera sin querer y adentro todo quedó seco.</p>
+        <p class="reseña-autor">Benjamín S.</p>
+      </div>
+      <div class="reseña-card">
+        <div class="reseña-estrellas">★★★★☆</div>
+        <p>Buena calidad de materiales, le bajo una estrella porque me hubiese gustado un bolsillo más chico afuera.</p>
+        <p class="reseña-autor">Valentina R.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="relacionados" class="relacionados">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>También te puede interesar</h2>
+    </div>
+    <div class="relacionados-grid">
+      <div class="producto-card">
+        <img src="https://picsum.photos/id/1035/400/400" alt="Riñonera técnica">
+        <h3>Riñonera Cruce</h3>
+        <p>$18.990</p>
+      </div>
+      <div class="producto-card">
+        <img src="https://picsum.photos/id/1039/400/400" alt="Estuche organizador">
+        <h3>Organizador Módulo</h3>
+        <p>$9.990</p>
+      </div>
+      <div class="producto-card">
+        <img src="https://picsum.photos/id/1043/400/400" alt="Mochila de menor capacidad">
+        <h3>Mochila Sendero 15L</h3>
+        <p>$44.990</p>
+      </div>
+      <div class="producto-card">
+        <img src="https://picsum.photos/id/1050/400/400" alt="Funda para laptop">
+        <h3>Funda Laptop 15"</h3>
+        <p>$12.990</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap footer-grid">
+    <div>
+      <div class="wordmark">ANDEN</div>
+      <p>Mochilas técnicas para el día a día.</p>
+    </div>
+    <div>
+      <h4>Ayuda</h4>
+      <p><a href="#">Cambios y devoluciones</a></p>
+      <p><a href="#">Seguimiento de pedido</a></p>
+    </div>
+    <div>
+      <h4>Contacto</h4>
+      <p>hola@anden.cl</p>
+      <p>+56 9 8765 4321</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // Cambiar imagen principal al hacer click en una miniatura
+  document.querySelectorAll('.thumb').forEach(thumb => {
+    thumb.addEventListener('click', () => {
+      document.getElementById('imagen-principal').src = thumb.dataset.full;
+      document.querySelectorAll('.thumb').forEach(t => t.classList.remove('active'));
+      thumb.classList.add('active');
+    });
+  });
+
+  // Selector de color
+  document.querySelectorAll('.swatch').forEach(swatch => {
+    swatch.addEventListener('click', () => {
+      document.querySelectorAll('.swatch').forEach(s => s.classList.remove('active'));
+      swatch.classList.add('active');
+      document.getElementById('color-seleccionado').textContent = swatch.dataset.color;
+    });
+  });
+
+  // Contador de cantidad
+  let cantidad = 1;
+  const cantidadEl = document.getElementById('cantidad');
+  document.getElementById('mas').addEventListener('click', () => {
+    cantidad++;
+    cantidadEl.textContent = cantidad;
+  });
+  document.getElementById('menos').addEventListener('click', () => {
+    if (cantidad > 1) cantidad--;
+    cantidadEl.textContent = cantidad;
+  });
+
+  // Botón de agregar al carro con confirmación breve
+  const btnComprar = document.getElementById('agregar-carro');
+  const textoOriginal = btnComprar.textContent;
+  btnComprar.addEventListener('click', () => {
+    btnComprar.textContent = 'Agregado ✓';
+    btnComprar.classList.add('confirmado');
+    setTimeout(() => {
+      btnComprar.textContent = textoOriginal;
+      btnComprar.classList.remove('confirmado');
+    }, 1600);
+  });
+
+  // Acordeón de detalles
+  document.querySelectorAll('.accordion-head').forEach(head => {
+    head.addEventListener('click', () => {
+      const item = head.parentElement;
+      const isOpen = item.classList.contains('open');
+      document.querySelectorAll('.accordion-item').forEach(i => i.classList.remove('open'));
+      if (!isOpen) item.classList.add('open');
+    });
+  });
+</script>
+
+</body>
+</html>
